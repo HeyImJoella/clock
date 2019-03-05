@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+body{
+  font-family: 'Muli', sans-serif;
+  width:100%;
+  margin:0;
+  background-color:#111;
+}
+
+
+.landingpage{
+  height:100vh;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 
+  "header header header"
+  "welcome welcome welcome"
+  "main main main"
+  "scroll scroll scroll";
+}
+
+#txt{
+  font-weight: bold;
+  color:#fafafa;
+  font-size:70px;
+  grid-area:main;
+  grid-template-rows:100%;
+  grid-template-columns:1fr;
+  text-align: center;
+}
+
+#clock{
+  max-height: 110px;
+  grid-area:header;
+  grid-template-rows:100%;
+  grid-template-columns:1fr;
+  text-align: center;
+  margin:0 auto;
+  margin-top:120px;
+}
+
+.white{
+  color:#fafafa;
+}
+
+.welcome{
+  grid-area:welcome;
+  grid-template-rows:100%;
+  grid-template-columns:1fr;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Tablet*/
+@media screen and (min-width: 766px) {
+  #txt{
+  font-size:100px;
+  }
+  #clock{
+    max-height:150px;
+  }
+}
+
+
+/*Notepad*/
+@media screen and (min-width: 1100px) {
+  #txt{
+  font-size:85px;
+  }
+  #clock{
+    max-height:130px;
+  }
+}
+ 
+/*Desktop*/
+@media screen and (min-width: 1919px) {
+  #txt{
+  font-size:100px;
+  }
+  #clock{
+    max-height:150px;
+  }
+}
