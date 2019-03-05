@@ -28,4 +28,4 @@ function checkTime(i) {
   return i;
 }
 
-TweenMax.from(".tween", 3, {x:100, ease:Elastic.easeOut});
+TweenMax.from(".tween", 3, {x:500, ease:Elastic.easeOut});
