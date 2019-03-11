@@ -30,8 +30,8 @@ function checkTime(i) {
 var tl = new TimelineMax();
 
 
-tl.from(".tween", 1, {ease: SlowMo.ease.config(0.7, 0.7, false), y: -200 })
+tl.from(".tween", 3, {x:500, ease:Elastic.easeOut})
 .from(".welcome", 4, {x:2000, ease:Back.easeOut}, '-=2.0')
-.from("#txt", 1, {x:2000, ease:Back.easeOut}, '-=2.5')
+.from("#txt", 1, {x:2000, ease:Back.easeOut}, '-=4.5')
 
 
